@@ -19,7 +19,7 @@ How to use in code.
     
     //you must look Available webservice function in WSDL file
     $hrmis->GetUserInfo()->xml(); // Output in xml format
-    $hrmis->GetUserInfo()->array(); // Output in array format
+    $hrmis->GetUserInfo()->arr(); // Output in array format
 ?>
 ```
 ### Contact
