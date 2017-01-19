@@ -8,7 +8,7 @@ Not for hrmis only but also can use another webservice with wss.
 Hrmisapi requires phpv5.3.+ to run.
 
 ```sh
-$ composer install mdridzuan80\hrmisapi
+$ composer require mdridzuan80\hrmisapi
 ```
 
 How to use in code.
