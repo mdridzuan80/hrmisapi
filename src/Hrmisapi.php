@@ -64,14 +64,8 @@ class Hrmisapi
         {
             $this->_client();
             $this->_wssToken();
-            $this->_client->{$name}($arguments);
+            $this->_client->{$name}($arguments[0]);
             return $this;
-            if($this->_output == 'xml'){
-                return $this->_client->__getLastResponse();
-            }
-            else{
-                return XML2Array::createArray($xml_str); 
-            }
         }
         catch(Exception $e)
         {
@@ -79,12 +73,13 @@ class Hrmisapi
         }
     }
 
-    // Output type : 'array' or 
+    // Output type : 'xml'
     public function xml()
     {
         return $this->_client->__getLastResponse();
     }
 
+    // Output type : 'array'
     public function arr()
     {
         return XML2Array::createArray(str_replace('>', '>',
