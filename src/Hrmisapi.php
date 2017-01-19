@@ -85,7 +85,7 @@ class Hrmisapi
         return $this->_client->__getLastResponse();
     }
 
-    public function array()
+    public function arr()
     {
         return XML2Array::createArray(str_replace('>', '>',
 												str_replace('<', '<',
