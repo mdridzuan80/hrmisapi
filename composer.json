@@ -1,0 +1,24 @@
+{
+    "name": "mdridzuan80/hrmisapi",
+    "description": "Library for consume webservice api with wss",
+    "keywords": ["hrmis"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Ridzuan bin Mohammad Latiah",
+            "email": "md.ridzuan80@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=5.3"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "Hrmisapi\\": "src/"
+        }
+    }
+}
