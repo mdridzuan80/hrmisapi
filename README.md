@@ -1,15 +1,27 @@
-Composer Library Template
-=========================
+# Hrmisapi
 
-If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.
+This is library for consume webservice with wss. Especialy Hrmis webservice.
+Not for hrmis only but also can use another webservice with wss.
 
-Features
---------
+### Installation
 
-* PSR-4 autoloading compliant structure
-* Unit-Testing with PHPUnit
-* Comprehensive Guides and tutorial
-* Easy to use to any framework or even a plain php file
+Hrmisapi requires phpv5.3.+ to run.
 
+```sh
+$ composer install mdridzuan80\hrmisapi
+```
 
-I encourage that you put more information on this readme file instead of leaving it as is. See [http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/](How to make a README file) for more info.
+How to use in code.
+```sh
+<?php
+    user Hrmisapi\Hrmisapi;
+    $hrmis = new Hrmisapi(<webservice url>, <username>, <password>);
+    
+    //you must look Available webservice function in WSDL file
+    $hrmis->GetUserInfo()->xml(); // Output in xml format
+    $hrmis->GetUserInfo()->array(); // Output in array format
+?>
+```
+### Contact
+Md Ridzuan bin Mohammad Latiah
+md.ridzuan80@gmail.com
