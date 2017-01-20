@@ -14,7 +14,7 @@ $ composer require mdridzuan80\hrmisapi
 How to use in code.
 ```sh
 <?php
-    user Hrmisapi\Hrmisapi;
+    use Hrmisapi\Hrmisapi;
     $hrmis = new Hrmisapi(<webservice url>, <username>, <password>);
     
     //you must look Available webservice function in WSDL file
