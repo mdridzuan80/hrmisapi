@@ -5,7 +5,7 @@ Not for hrmis only but also can use another webservice with wss.
 
 ### Installation
 
-Hrmisapi requires phpv5.3.+ to run.
+Hrmisapi requires phpv5.3.+, php soap ext, php xml ext to run.
 
 ```sh
 $ composer require mdridzuan80\hrmisapi
