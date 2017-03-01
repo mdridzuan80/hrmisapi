@@ -8,7 +8,7 @@ Not for hrmis only but also can use another webservice with wss.
 Hrmisapi requires phpv5.3.+, php soap ext, php xml ext to run.
 
 ```sh
-$ composer require mdridzuan80\hrmisapi
+$ composer require mdridzuan80/hrmisapi
 ```
 
 How to use in code.
