@@ -69,7 +69,7 @@ class Hrmisapi
         }
         catch(Exception $e)
         {
-            die($e);
+            throw new Exception($e);
         }
     }
 
